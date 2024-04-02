@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Baldeva Reddy Kandala Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd36;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand " href="index.html">Welcome  to  my  Portfolio!</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link "><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link "><span>About</span></a></li>
+	          <li class="nav-item"><a href="#organization-section" class="nav-link "><span>Organization</span></a></li>
+	          <li class="nav-item"><a href="#business-section" class="nav-link "><span>Business</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link "><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img img-fluid " style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		
+			            <h1 class="mb-4 mt-3 text-black">I'm <span>Baldeva Reddy Kandala</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Social Activist  ',
+						'Founder  ',
+						'Influencer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2></h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="http://www.youtube.com/@baladevareddykandala3763" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://www.linkedin.com/in/baladeva-reddy-kandala-3aa043302" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Baldeva Reddy Kandala</span></p>
+										<p><span class="title-s">Role: </span> <span>Managing Director</span></p>
+										<p><span class="title-s">Experience: </span> <span>30+ years</span></p>
+										<p><span class="title-s">Address: </span> <span>Koheda, R.R.Dist</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									
+									<span>Legal Advisor</span> <span class="pull-right">97%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Documentation</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Orator</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Agriculture</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Agitator</span> <span class="pull-right">88%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Overall 35 years of presence in the society, took initiatives and programs,  to empower individuals with knowledge and skills, paving the way for a brighter future.<br>
+									Led the Workers Union, and played a key role in fighting for Labor rights(Sanghi Insdustries, 1990)<br>
+									Contributed as the JAC Chairman,  Hayatnagar Mandal during the Telangana Agitation Movement from 2009 to 2014.
+									<br>
+								    At present,  being the State Convenor for TUF(Telangana Udhaymakaarula Forum).
+									
+								<ul class="about-info mt-4 px-md-0 px-2">
+									
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Arts </span></li>
+									<li class="d-flex"><span>Language:</span> <span>Telugu, Hindi, English, </span></li>
+									<li class="d-flex"><span>Awards:</span> <span>Prof. Jayashankar Award(2018)</span></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="organization-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          
+            <h2 class="mb-4">Vihaar Foundation</h2>
+			<div class="underline"></div>
+<br>
+            <h3>Vihaar Foundation is dedicated to empowering students to achieve their educational goals by providing financial support. 
+				We strive to distribute study materials and resources related to their courses, ensuring they have everything they need to succeed. 
+				Through our work, we aim to encourage and inspire aspiring youth, highlighting the importance of education in realizing their dreams.</h3>
+          </div>
+        </div>
+
+		
+		
+		
+
+	
+
+   
+
+    <section class="ftco-section" id="business-section">
+      <div class="container">
+        <div class="row justify-content-center mb-6 pb-6">
+          <div class="col-md-14 heading-section text-center ftco-animate">
+            
+            <h2 class="mb-4">Vimala Infra Developers</h2>
+            <h5> specializes in offering comprehensive services for land development. From acquiring land to developing it, we handle every aspect of land transformation, including planting trees and creating gardens.
+				Our expertise extends to construction on the developed land, ensuring that it is optimized for residential or commercial purposes. 
+			   Finally, we facilitate the sale of the developed land, ensuring a seamless process from start to finish.</h5>
+			   <div class="underline"></div>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftimesproperty.com%2Fnews%2Fpost%2Fis-buying-land-the-best-way-to-invest-in-real-estate-blid5505&psig=AOvVaw2jx-B1LqiLcOeOS-5FMLUJ&ust=1712061528491000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNCU5KuEoYUDFQAAAAAdAAAAABAJ" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h2 class="heading">Buying the Land </a></h2>
+                <p>We buy agriculture land to ensure a smooth and legal transaction with clear and marketable title .</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3D%2522tree%2Bplanting%2522&psig=AOvVaw3ebFMoEz26UeU8IpW-p0vo&ust=1712060983714000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCLiWhKiCoYUDFQAAAAAdAAAAABAO" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading">Developing the Land</a></h3>
+                <p>We develop the land through planting trees, shrubs, etc  to enhance the land's beauty.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fukdigital.in%2Fcommunity%2Fproperty%2F9-biga-land-for-sale-in-bel-parao-haldwani%2F&psig=AOvVaw0t6wPi4Mkt8kBWiRjoIsYu&ust=1712060666544000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCID215CBoYUDFQAAAAAdAAAAABAE" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading">Selling the Land</a></h3>
+                <p> We ensure that the sale price of the land reflects its true value based on location, amenities, and market demand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.magicbricks.com%2Fblog%2Fland-measurements-units-india%2F115035.html&psig=AOvVaw0INeR4-_JAe1auMl-MDCk8&ust=1712065095687000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKiH59CRoYUDFQAAAAAdAAAAABAE" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Surveying the Land </a></h3>
+				  <p>We involve in  measuring and mapping the area, boundaries of the land to determine the exact dimensions.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2Flawyer-and-law-firm-logo-template-on-transparent-background-png--807481408204741787%2F&psig=AOvVaw0auQ5arDJ01_vVK7hnoRQL&ust=1712065368226000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjdy9KSoYUDFQAAAAAdAAAAABAF" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Legal Revenue Advisor</a></h3>
+				  <p>we provide legal advice and guidance related to revenue matters complying with revenue laws and regulations. </p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<div class="underline"></div>
+	
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-7 pb-7">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+           
+            <h2 class="mb-4">Contact Me</h2>
+            <h4>Below are the details to reach out to me!</h4>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Koheda, Ranga Reddy District, Telangana</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101" class="text-black"> +91 9573428881 <br> +91 7013569827</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com" class="text-black">baladevareddyk@gmail.com <br> vihaarfoundation2@gmail.com </a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-work"></span>
+          		</div>
+          		<h3 class="mb-4">Office</h3>
+	            <p>Suryalok Complex, Abids, Hyderabad</p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://bit.ly/3PM4eet" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+
+					  <li class="ftco-animate"><a href="https://twitter.com/Baldevareddyk9"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100008382637484"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/baladevareddykandhala/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+   
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"
+></script>
+
+  </body>
+</html>
